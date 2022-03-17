@@ -1,0 +1,31 @@
+.heading {
+  color: #f8fafc;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.div-container {
+  background-color: #161624;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.countries-list-div {
+  height: 300px;
+  overflow: auto;
+  border-radius: 10px;
+  border: 1px solid #334155;
+}
+
+.countries-list {
+  color: #f8fafc;
+  list-style: none;
+}
+
+.visited-countries-list {
+  list-style: none;
+  display: flex;
+  flex-direction: center;
+  flex-wrap: wrap;
+  color: #ffffff;
+}
