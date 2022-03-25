@@ -1,37 +1,46 @@
-.image-div {
-  margin-bottom: 0;
+.visited-countries-list {
+  list-style-type: none;
+  margin: 5px;
+  max-width: 350px;
+  max-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.country-image {
+  height: 70%;
+  width: 100%;
 }
 
-.image {
-  width: 250px;
-}
-
-.list-item {
-  width: 250xp;
-  margin: 20xp;
-  background-color: #334155;
-  list-style: none;
-}
-
-.countries-div {
+.country-list-div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-left: 10px;
-  padding-right: 10px;
-  background-color: #334155;
+  align-items: center;
+  padding: 10px;
+  height: 20%;
+  width: 100%;
+  background-color: #1f1f2f;
 }
 
 .country-name {
   color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: normal;
+  margin: 5px;
 }
-.button {
-  color: #ffffff;
+
+.remove-btn {
   background-color: transparent;
-  height: 30px;
-  width: 60px;
-  margin-top: auto;
-  margin-bottom: auto;
-  border: 1px solid #ffffff;
-  border-radius: 5px;
+  color: #ffffff;
+  font-size: 18px;
+  font-family: 'Roboto';
+  height: 40px;
+  width: 90px;
+  border-radius: 7px;
+  border: 1px solid #94a3b8;
+  margin: 5px;
+  outline: none;
+  cursor: pointer;
 }

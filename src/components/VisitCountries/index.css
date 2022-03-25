@@ -1,31 +1,57 @@
-.heading {
-  color: #f8fafc;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.div-container {
+.app-container {
   background-color: #161624;
-  min-height: 100vh;
+  height: 100vh;
+  width: 100vw;
   padding: 20px;
-}
-
-.countries-list-div {
-  height: 300px;
-  overflow: auto;
-  border-radius: 10px;
-  border: 1px solid #334155;
-}
-
-.countries-list {
-  color: #f8fafc;
-  list-style: none;
-}
-
-.visited-countries-list {
-  list-style: none;
   display: flex;
-  flex-direction: center;
-  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.heading {
   color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 30px;
+  font-weight: 500;
+  margin: 5px;
+}
+
+.not-visited {
+  color: #ffffff;
+  font-family: 'Roboto';
+  font-size: 30px;
+  font-weight: 600;
+  margin: 5px;
+  align-self: center;
+}
+
+.visited-list {
+  border: 0px;
+  padding: 10px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 5px;
+  margin-left: 30px;
+  max-height: 50vh;
+  overflow-y: scroll;
+}
+
+.countries-list-container {
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 10px;
+  margin-left: 30px;
+  max-height: 40vh;
+  overflow-y: scroll;
+  background-color: #1f1f2f;
 }

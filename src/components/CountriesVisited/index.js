@@ -1,21 +1,19 @@
 import './index.css'
 
 const CountriesVisited = props => {
-  const {countryDetails, isVisitedToggle} = props
-  const {name, id, imageUrl} = countryDetails
+  const {onRemoveBtn, visitedCountries} = props
+  const {id, name, imageUrl} = visitedCountries
 
-  const onRemoveCountry = () => {
-    isVisitedToggle(id)
+  const onClickRemove = () => {
+    onRemoveBtn(id)
   }
 
   return (
-    <li className="list-item">
-      <div className="image-div">
-        <img src={imageUrl} alt="thumbnail" className="image" />
-      </div>
-      <div className="countries-div">
+    <li className="visited-countries-list">
+      <img src={imageUrl} className="country-image" alt="thumbnail" />
+      <div className="country-list-div">
         <p className="country-name">{name}</p>
-        <button type="button" className="button" onClick={onRemoveCountry}>
+        <button className="remove-btn" type="button" onClick={onClickRemove}>
           Remove
         </button>
       </div>
